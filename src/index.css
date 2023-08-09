@@ -1,0 +1,66 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+* {
+  margin: 0;
+}
+
+.App {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.page-container {
+  min-width: 85%;
+  background-color: #eaf6f6;
+  padding: 1.5rem;
+}
+
+.total-data {
+  height: auto;
+  color: black;
+  background-color: aliceblue;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  border-radius: 10px;
+  padding: 2rem;
+}
+
+.charts-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 0.1fr 300px 300px 300px;
+  gap: 20px;
+}
+
+.chart {
+  background-color: aliceblue;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Media query for smaller screens */
+@media screen and (max-width: 768px) {
+  .charts-container {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(1, 0.1fr);
+  }
+}
